@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./assest/back.png');
+    background-size: cover;
+}
+.main {
+    width: 100%;
+    height: 100%;
+    background-image: url('./assest/candy gold/img/1212@2x.png');
+    opacity: 0.5;
+    background-size: cover;
+}
+.logoName {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 2vh;
+    color: white;
+    font-size: 1.5em;
+    padding: 5px;
+    width: 25vw;
+    height: 10vh;
+    backdrop-filter: blur(16px);
+    background-color: rgba(126, 126, 126, 0.7);
+}
+.lnItems {
+    margin: 5px;
+}
+.name {
+    margin-right: 10px;
+}
