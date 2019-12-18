@@ -1,0 +1,16 @@
+.active{
+	border-left: #444 solid 3px;
+}
+.navbar-nav{
+	font-size: 1em !important;
+	padding-left:8px 14px !important;
+}
+header{
+	background: url(../img/image1.jpg);
+	background-attachment: fixed;
+	background-repeat:no-repeat;
+	background-size: cover;  
+}
+h2{
+	font-size: 40px;
+}

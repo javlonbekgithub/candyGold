@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <link href="index.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
     <div class = 'background'>
@@ -21,15 +24,25 @@
                         <p>ИЗДЕЛИЯ</p>    
                     </div>
                 </div>
-                <div class = "about-us">
-                    <a href = "" class = "aboutUsItem">ГЛАВНАЯ</a>
-                    <a href = "" class = "aboutUsItem">ПРОДУКТЫ</a>
-                    <a href = "" class = "aboutUsItem">НОВОСТИ</a>
-                    <a href = "" class = "aboutUsItem">О НАС</a>
-                    <a href = "" class = "aboutUsItem">КОНТАКТЫ</a>
-                    <img src = "./assets/candy gold/img/XMLID_496_.png" alt="tg">
-                    <img src = "./assets/candy gold/img/facebook-logo.png" alt="fc">
-                    <img src = "./assets/candy gold/img/instagram-social-network-logo-of-photo-camera.png" alt="ins">
+                <div onclick = "openHamburger" id = "menu">menu</div>
+                <div class = "about-us" id = "about-us">
+                    <a href = "" id = "aboutUsItem" class = "aboutUsItem">ГЛАВНАЯ</a>
+                    <a href = "" id = "aboutUsItem" class = "aboutUsItem">ПРОДУКТЫ</a>
+                    <a href = "" id = "aboutUsItem" class = "aboutUsItem">НОВОСТИ</a>
+                    <a href = "" id = "aboutUsItem" class = "aboutUsItem">О НАС</a>
+                    <a href = "" id = "aboutUsItem" class = "aboutUsItem">КОНТАКТЫ</a>
+                    <img 
+                        class = "aboutUsItem"
+                        src = "./assets/candy gold/img/XMLID_496_.png" 
+                        alt="tg">
+                    <img 
+                        class = "aboutUsItem"
+                        src = "./assets/candy gold/img/facebook-logo.png" 
+                        alt="fc">
+                    <img 
+                        class = "aboutUsItem"
+                        src = "./assets/candy gold/img/instagram-social-network-logo-of-photo-camera.png" 
+                        alt="ins">
                 </div>
             </div>
                 <div class = "goal">
@@ -111,4 +124,5 @@
     </div>
     
 </body>
+<script src="index.js"></script>
 </html>
