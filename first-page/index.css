@@ -12,7 +12,7 @@
 .background {
     width: 100vw;
     height: 100vh;
-    background-image: url('./assets/back.png');
+    background-image: url('../assets/back.png');
     background-size: cover;
     background-color: green;
     background-size: cover;
@@ -26,7 +26,7 @@
     width: 100%;
     height: 100%;
     padding-top: 2vh;
-    background-image: url('./assets/candy gold/img/1212@2x.png');
+    background-image: url('../assets/candy gold/img/1212@2x.png');
     background-color: rgba(255, 255, 255, 0.1);
     background-size: cover;
     position: relative;
@@ -38,6 +38,7 @@
 .header {
     display: flex;
     justify-content: space-between;
+    position: relative;
     width: 100%;
 }
     .logoName {
@@ -45,7 +46,7 @@
         flex-direction: row;
         align-items: center;
         padding: 5px 25px; 
-        backdrop-filter: blur(0.8px);
+        backdrop-filter: blur(16px);
         background-color: var(--alphaGrey);
     }
     .logo {
@@ -69,7 +70,7 @@
         font-size: 0.5em;
         width: 100%;
         height: 13vh;
-        backdrop-filter: blur(0.8px);
+        backdrop-filter: blur(16px);
         background-color: var(--alphaGrey);
     }
 }
@@ -89,7 +90,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        backdrop-filter: blur(0.8px);
+        backdrop-filter: blur(16px);
         background-color: var(--alphaGrey);
     }
         .aboutUsItem {
@@ -119,25 +120,27 @@
     }
     .about-us-mini {
             color: #fff;
-            margin-top: 10vh;
-            height: 70vh;
+            top: 100%;
+            /* height: 70vh; */
+            width: 100%;
             position: absolute;
-            padding: 5px 10px;
+            /* padding: 5px 10px; */
             z-index: 100;
             right: 0;
             animation: about-us 0.5s;
-            display: flex;
+            /* display: flex; */
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
-            box-shadow: -4px 3px 15px 0px rgba(0,0,0,0.75);
-            backdrop-filter: blur(3px);
+            backdrop-filter: blur(20px);
             background-color: var(--alphaGrey);
         }
         .aboutUsItem-mini {
-            display: inline-block;
+            /* display: inline-block; */
             text-decoration: none;
-            display: flex;
+            margin: 0 0;
+            padding: 0 0;
+            /* display: flex; */
             align-items: center;
             color: white;
             height: 100%;
@@ -145,7 +148,7 @@
             cursor: pointer;
             width: 100%;
             object-fit: none;
-            padding: 0 6px;
+            /* padding: 0 6px; */
             transition: ease-out;
             transition-duration: 0.4s;
         }
@@ -154,11 +157,11 @@
         }
         @keyframes about-us {
             from {
-                transform: translateX(30px);
+                transform: translateY(-30px);
                 opacity: 0;
             }
             to  {
-                transform: translateX(0);
+                transform: translateY(0);
                 opacity: 1;
             }
         }
@@ -206,7 +209,7 @@
         justify-content: center;
         margin: 5px 0;
         height: 100%;
-        backdrop-filter: blur(1.5px);
+        backdrop-filter: blur(20px);
         background-color: var(--alphaGrey);
         font-family: var(--font);
     }
@@ -235,7 +238,7 @@
             padding: 10px 50px;
             margin: 5px 0;
             /* flex-direction: inherit; */
-            backdrop-filter: blur(1.5px);
+            backdrop-filter: blur(20px);
             background-color: var(--alphaGrey);
             font-family: var(--font);
         }
@@ -330,7 +333,7 @@
     .langCont {
         position: absolute;
         bottom: 60px;
-        backdrop-filter: blur(1.5px);
+        backdrop-filter: blur(20px);
         background-color: var(--alphaGrey);
         display: none;
         transition: ease-in-out;
@@ -383,7 +386,7 @@
         .langCont {
             position: absolute;
             bottom: 130px;
-            backdrop-filter: blur(1.5px);
+            backdrop-filter: blur(20px);
             background-color: var(--alphaGrey);
             display: none;
             transition: ease-in-out;

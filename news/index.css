@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.background {
+    width: 100vw;
+    background-color: black;
+    height: 100vh;
+}
+.main{
+    
+}
+    .header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+        .logoName {
+            color: blue;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 5px 25px; 
+            backdrop-filter: blur(0.8px);
+            background-color: var(--alphaGrey);
+        }
+        .logo {
+            object-fit: contain;
+            width: 120px;
+        }
+        .lnItems {
+            color: blue;
+            font-weight: 500;
+            padding: 0 5px;
+            color: white;
+            font-size: 1.5em;
+        }
+
+    @media screen and (max-width: 900px) {
+        .logoName {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 5px 250px 5px 5px;
+            font-size: 0.5em;
+            width: 100%;
+            height: 13vh;
+            backdrop-filter: blur(0.8px);
+            background-color: var(--alphaGrey);
+        }
+    }
+        #menu {
+            display: none;
+            position: absolute;
+            right: 0;
+            padding: 10px;
+            object-fit: contain;
+            width: 50px;
+        }
+        .about-us {
+            width: 51%;
+            height: 8vh;
+            color: #fff;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            backdrop-filter: blur(0.8px);
+            background-color: var(--alphaGrey);
+        }
+            .aboutUsItem {
+                display: inline-block;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                color: white;
+                height: 100%;
+                /* font-size: 1em; */
+                cursor: pointer;
+                width: 100%;
+                object-fit: none;
+                padding: 0 6px;
+                transition: ease-out;
+                transition-duration: 0.4s;
+            }
+            .aboutUsItem:hover {
+                background-color: var(--brown);
+            }
+    @media screen and (max-width: 900px) {
+        .about-us {
+            display: none;
+        }
+        #menu {
+            display: block;
+        }
+        .about-us-mini {
+                color: #fff;
+                margin-top: 10vh;
+                height: 70vh;
+                position: absolute;
+                padding: 5px 10px;
+                z-index: 100;
+                right: 0;
+                animation: about-us 0.5s;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                box-shadow: -4px 3px 15px 0px rgba(0,0,0,0.75);
+                backdrop-filter: blur(3px);
+                background-color: var(--alphaGrey);
+            }
+            .aboutUsItem-mini {
+                display: inline-block;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                color: white;
+                height: 100%;
+                /* font-size: 1em; */
+                cursor: pointer;
+                width: 100%;
+                object-fit: none;
+                padding: 0 6px;
+                transition: ease-out;
+                transition-duration: 0.4s;
+            }
+            .aboutUsItem-mini:hover {
+                background-color: var(--brown);
+            }
+            @keyframes about-us {
+                from {
+                    transform: translateX(30px);
+                    opacity: 0;
+                }
+                to  {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+            }
+    }
