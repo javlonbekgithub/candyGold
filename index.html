@@ -12,19 +12,19 @@
         <div class = 'main' >
             <div class = "header">
                 <div class = "logoName">
-                    <div class = "lnItems name">
+                    <div class = "lnItems">
                         <img 
                             src = "./assets/Слой_x0020_1.png" 
                             alt="logo"
                             class = "logo"    
                         >
                     </div>
-                    <div class = "lnItems logo">
+                    <div class = "lnItems">
                         <p>КОНДИТЕРСИЕ</p>
                         <p>ИЗДЕЛИЯ</p>    
                     </div>
                 </div>
-                <div onclick = "openHamburger" id = "menu">menu</div>
+                <img onclick = "openHamburger" id = "menu" src = "./assets/menu.png"/>
                 <div class = "about-us" id = "about-us">
                     <a href = "" id = "aboutUsItem" class = "aboutUsItem">ГЛАВНАЯ</a>
                     <a href = "" id = "aboutUsItem" class = "aboutUsItem">ПРОДУКТЫ</a>
@@ -51,75 +51,87 @@
                 </div>
                 <div class = "products">
                     <div class = "prItems">
-                        <img src="./assets/candy gold/img/chocolate.png" alt="img">
+                        <img 
+                            src="./assets/candy gold/img/chocolate.png" 
+                            alt="img"
+                            class = "prItemsIcon"
+                            >
                         <p class = "prItemsName"> ШОКОЛАДЫ</p>
                     </div>
                     <div class = "prItems">
-                        <img src = "./assets/candy gold/img/crackers.png" alt="img">
+                        <img 
+                            src = "./assets/candy gold/img/crackers.png" 
+                            alt="img"
+                            class = "prItemsIcon"
+                            >
                         <p class = "prItemsName"> ПЕЧЕНЬЕ</p>
                     </div>
                     <div class = "prItems">
-                        <img src = "./assets/candy gold/img/stroopwafel.png" alt="img">
+                        <img 
+                            src = "./assets/candy gold/img/stroopwafel.png" 
+                            alt="img"
+                            class = "prItemsIcon"
+                            >
                         <p class = "prItemsName"> ВАФЛЕННЫЕ</p>
                     </div>
                     <div class = "prItems">
-                        <img src = "./assets/candy gold/img/chocolates.png" alt="img">
+                        <img 
+                            src = "./assets/candy gold/img/chocolates.png" 
+                            alt="img"
+                            class = "prItemsIcon"
+                            >
                         <p class = "prItemsName"> КОНФЕТЫ</p>
                     </div>
                 </div>
+                <div class = "selectorBackground">
+                    <div class = "selector"></div>
+                    <div class = "selector"></div>
+                    <div class = "selector"></div>
+                </div>
                 <div class = "footer">
-                    <div class = "selectorBackground">
-                        <div class = "selector"></div>
-                        <div class = "selector"></div>
-                        <div class = "selector"></div>
+                    <div class = "ftrInfo">
+                        <p class = "downloadCatalog">Скачать каталог</p>
+                        <p class = "infoFt">Кондитерская фабрика «Candy Gold» является крупнейшим</p>
+                        <p class = "infoFt">производителем кондитерских изделий в Узбекистане.</p>
                     </div>
-                    
-                    <div class = "innerFooter">
-                        <div class = "ftrInfo">
-                            <p class = "downloadCatalog">Скачать каталог</p>
-                            <p class = "infoFt">Кондитерская фабрика «Candy Gold» является крупнейшим</p>
-                            <p class = "infoFt">производителем кондитерских изделий в Узбекистане.</p>
-                        </div>
-                        <div class = "roundAbout">
-                            <img 
-                                src = "./assets/candy gold/img/angle-arrow-down.png" 
-                                alt = "prev"
-                                class = "roundAboutItem"
-                            >
-                            <p class = "roundAboutItemPr">пред</p>
-                            <p class = "roundAboutItemPr">след</p>
-                            <img 
-                                src = "./assets/candy gold/img/123.png" 
-                                alt = "next"
-                                class = "roundAboutItem"
-                            >
-                        </div>
-                        <div class = "setPanel">
-                            <p class = "setPanelItem">ВКЛ</p>
-                            <p class = "setPanelItem">ВЫКЛ</p>
-                            <div class = "setPanelItemLanguage">
-                                <label for="setLang" class = "langLabel">
-                                    <input 
-                                        type="checkbox" 
-                                        id="setLang" 
-                                        class="inputCH">
-                                    <img 
-                                        class = "arrowDown" 
-                                        src="./assets/angle-arrow-down.png" 
-                                        alt="select"
-                                    >
-                                    <p>РУССКИЙ</p>
-                                    <div class = "langCont">
-                                        <p class = "langContPr">РУССКИЙ</p>
-                                        <p class = "langContPr">АНГЛИСКИЙ</p>
-                                        <p class = "langContPr">УЗБЕКИСКИЙ</p>
-                                    </div>
-                                </label>    
-                            </div>
+                    <div class = "roundAbout">
+                        <img 
+                            src = "./assets/candy gold/img/angle-arrow-down.png" 
+                            alt = "prev"
+                            class = "roundAboutItem"
+                        >
+                        <p class = "roundAboutItemPr">пред</p>
+                        <p class = "roundAboutItemPr">след</p>
+                        <img 
+                            src = "./assets/candy gold/img/123.png" 
+                            alt = "next"
+                            class = "roundAboutItem"
+                        >
+                    </div>
+                    <div class = "setPanel">
+                        <p class = "setPanelItem">ВКЛ</p>
+                        <p class = "setPanelItem">ВЫКЛ</p>
+                        <div class = "setPanelItemLanguage">
+                            <label for="setLang" class = "langLabel">
+                                <input 
+                                    type="checkbox" 
+                                    id="setLang" 
+                                    class="inputCH">
+                                <img 
+                                    class = "arrowDown" 
+                                    src="./assets/angle-arrow-down.png" 
+                                    alt="select"
+                                >
+                                <p>РУССКИЙ</p>
+                                <div class = "langCont">
+                                    <p class = "langContPr">РУССКИЙ</p>
+                                    <p class = "langContPr">АНГЛИСКИЙ</p>
+                                    <p class = "langContPr">УЗБЕКИСКИЙ</p>
+                                </div>
+                            </label>    
                         </div>
                     </div>
                 </div>
-
         </div>
     </div>
     
