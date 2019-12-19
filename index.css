@@ -24,8 +24,8 @@
 
 .main {
     width: 100%;
-    padding: 2vh 0;
     height: 100%;
+    padding-top: 2vh;
     background-image: url('./assets/candy gold/img/1212@2x.png');
     background-color: rgba(255, 255, 255, 0.1);
     background-size: cover;
@@ -92,7 +92,6 @@
         backdrop-filter: blur(0.8px);
         background-color: var(--alphaGrey);
     }
-
         .aboutUsItem {
             display: inline-block;
             text-decoration: none;
@@ -187,21 +186,50 @@
             font-size: 1em;
             font-weight: 250;
         }
+}
+.products {
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 0 var(--lm);
+    width: 95%;
+    font-size: 1.4em;
+    font-weight: 600;
+    color: white;
+}
+    .prItems {  
+        width: 22vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 5px 0;
+        height: 100%;
+        backdrop-filter: blur(1.5px);
+        background-color: var(--alphaGrey);
+        font-family: var(--font);
+    }
+        .prItemsName {
+            margin-left: 10px;
+        }
 @media screen and (max-width: 900px) {
     .products {
         display: flex;
         flex-direction: column;
+        margin: 0 0;
         justify-content: space-between;
         align-items: center;
         text-align: center;
+        height: max-content;
         width: 100%;
-        font-size: 0.8em;
+        font-size: 1.4em;
         font-weight: 600;
         color: white;
     }
         .prItems {  
             display: flex;
-            width: 50%;
+            width: 80%;
             align-items: center;
             justify-content: center;
             padding: 10px 50px;
@@ -218,13 +246,12 @@
             }
 }
 .selectorBackground {
-    width: 3vw;
-    height: 5vh;
+    width: 30px;
     margin: 0 var(--lm);
 }
 .selector {
-    width: 0.9vw;
-    height: 0.9vw;
+    width: 13px;
+    height: 13px;
     cursor: pointer;
     margin: 8px 0;
     background-color: rgb(134, 134, 134);
@@ -286,7 +313,7 @@
         cursor: pointer;
         /* transition: ease-in;
         transition-duration: 0.5s; */
-        border-bottom-color:white;
+        /* border-bottom-color:white; */
     }
     .arrowDown {
         object-fit: contain;
@@ -302,11 +329,10 @@
     }
     .langCont {
         position: absolute;
-        bottom: 5vh;
+        bottom: 60px;
         backdrop-filter: blur(1.5px);
         background-color: var(--alphaGrey);
         display: none;
-        animation: anime2 0.5s;
         transition: ease-in-out;
         transition-duration: 1s;
     }
@@ -334,16 +360,6 @@
             transform: translateY(0);
         }
     }
-    @keyframes anime2 {
-        from {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        to {
-            opacity: 0;
-            transform: translateY(20px);
-        }
-    }
 
     .inputCH:checked ~ .arrowDown {
         transform: rotateZ(180deg);
@@ -364,4 +380,14 @@
     .setPanel {
         order: 2;
     }
+        .langCont {
+            position: absolute;
+            bottom: 130px;
+            backdrop-filter: blur(1.5px);
+            background-color: var(--alphaGrey);
+            display: none;
+            transition: ease-in-out;
+            transition-duration: 1s;
+        }
+
 }   
