@@ -1,8 +1,11 @@
-* {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--font);
 }
 :root {
     --alphaGrey: rgba(126, 126, 126, 0.12);
@@ -128,12 +131,6 @@
         .aboutUsItem:hover {
             background-color: var(--brown);
         }
-        .socialIcons {
-            display: flex;
-            width: 100%;
-            height: 100%;
-            /* padding: 0 5px; */
-        }
 @media screen and (max-width: 900px) {
     .about-us {
         display: none;
@@ -144,9 +141,10 @@
     .about-us-mini {
             color: #fff;
             top: 100%;
+            /* height: 70vh; */
             width: 100%;
             position: absolute;
-            padding: 10px 0px;
+            /* padding: 5px 10px; */
             z-index: 100;
             right: 0;
             animation: about-us 0.5s;
@@ -420,4 +418,193 @@
             transition-duration: 1s;
         }
 
-}   
+}       
+    </style>
+    <link href="index.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+    <div class = 'background'>
+        <div class = 'main' >
+            <div class = "header">
+                <div class = "logoName">
+                    <div class = "lnItems">
+                        <img 
+                            src = "../assets/Слой_x0020_1.png" 
+                            alt="logo"
+                            class = "logo"    
+                        >
+                    </div>
+                    <div class = "lnItems">
+                        <p>КОНДИТЕРСИЕ</p>
+                        <p>ИЗДЕЛИЯ</p>    
+                    </div>
+                </div>
+                <img onclick = "openHamburger" id = "menu" src = "../assets/menu.png"/>
+                <div class = "about-us" id = "about-us">
+                    <a 
+                        class = "aboutUsItemA"
+                        href = "" id = "aboutUsItem">
+                        <div class = "aboutUsItem">ГЛАВНАЯ</div>
+                    </a>
+                    <a 
+                        class = "aboutUsItemA"
+                        href = "" id = "aboutUsItem">
+                        <div class = "aboutUsItem">ПРОДУКТЫ</div>
+                    </a>
+                    <a 
+                        class = "aboutUsItemA"
+                        href = "" id = "aboutUsItem">
+                        <div class = "aboutUsItem">НОВОСТИ</div>
+                    </a>
+                    <a 
+                        class = "aboutUsItemA"
+                        href = "" id = "aboutUsItem">
+                        <div class = "aboutUsItem">О НАС</div>
+                    </a>
+                    <a 
+                        class = "aboutUsItemA"
+                        href = "" id = "aboutUsItem">
+                        <div class = "aboutUsItem">КОНТАКТЫ</div>
+                    </a>
+                    <a 
+                        class = "aboutUsItemA"
+                        href = "">
+                        <div class = "aboutUsItem"><img 
+                            src = "../assets/candy gold/img/XMLID_496_.png" 
+                            alt="tg">
+                        </div>
+                    </a>
+                    <a 
+                        class = "aboutUsItemA"
+                        href = "">
+                        <div class = "aboutUsItem"><img 
+                            src = "../assets/candy gold/img/facebook-logo.png" 
+                            alt="fc">
+                        </div>
+                    </a>
+                    <a 
+                        class = "aboutUsItemA"
+                        href = "">
+                        <div class = "aboutUsItem"><img 
+                            src = "../assets/candy gold/img/instagram-social-network-logo-of-photo-camera.png" 
+                            alt="ins" />
+                        </div>
+                    </a>
+                </div>
+            </div>
+                <div class = "goal">
+                    <h1>Мы стараемся</h1>
+                    <p class = "goalPr">сделать жизнь слаще</p>
+                </div>
+                <div class = "products">
+                    <div class = "prItems">
+                        <img 
+                            src="../assets/candy gold/img/chocolate.png" 
+                            alt="img"
+                            class = "prItemsIcon"
+                            >
+                        <p class = "prItemsName"> ШОКОЛАДЫ</p>
+                    </div>
+                    <div class = "prItems">
+                        <img 
+                            src = "../assets/candy gold/img/crackers.png" 
+                            alt="img"
+                            class = "prItemsIcon"
+                            >
+                        <p class = "prItemsName"> ПЕЧЕНЬЕ</p>
+                    </div>
+                    <div class = "prItems">
+                        <img 
+                            src = "../assets/candy gold/img/stroopwafel.png" 
+                            alt="img"
+                            class = "prItemsIcon"
+                            >
+                        <p class = "prItemsName"> ВАФЛЕННЫЕ</p>
+                    </div>
+                    <div class = "prItems">
+                        <img 
+                            src = "../assets/candy gold/img/chocolates.png" 
+                            alt="img"
+                            class = "prItemsIcon"
+                            >
+                        <p class = "prItemsName"> КОНФЕТЫ</p>
+                    </div>
+                </div>
+                <div class = "selectorBackground">
+                    <div class = "selector"></div>
+                    <div class = "selector"></div>
+                    <div class = "selector"></div>
+                </div>
+                <div class = "footer">
+                    <div class = "ftrInfo">
+                        <p class = "downloadCatalog">Скачать каталог</p>
+                        <p class = "infoFt">Кондитерская фабрика «Candy Gold» является крупнейшим</p>
+                        <p class = "infoFt">производителем кондитерских изделий в Узбекистане.</p>
+                    </div>
+                    <div class = "roundAbout">
+                        <img 
+                            src = "../assets/candy gold/img/angle-arrow-down.png" 
+                            alt = "prev"
+                            class = "roundAboutItem"
+                        >
+                        <p class = "roundAboutItemPr">пред</p>
+                        <p class = "roundAboutItemPr">след</p>
+                        <img 
+                            src = "../assets/candy gold/img/123.png" 
+                            alt = "next"
+                            class = "roundAboutItem"
+                        >
+                    </div>
+                    <div class = "setPanel">
+                        <p class = "setPanelItem">ВКЛ</p>
+                        <p class = "setPanelItem">ВЫКЛ</p>
+                        <div class = "setPanelItemLanguage">
+                            <label for="setLang" class = "langLabel">
+                                <input 
+                                    type="checkbox" 
+                                    id="setLang" 
+                                    class="inputCH">
+                                <img 
+                                    class = "arrowDown" 
+                                    src="../assets/angle-arrow-down.png" 
+                                    alt="select"
+                                >
+                                <p>РУССКИЙ</p>
+                                <div class = "langCont">
+                                    <p class = "langContPr">РУССКИЙ</p>
+                                    <p class = "langContPr">АНГЛИСКИЙ</p>
+                                    <p class = "langContPr">УЗБЕКИСКИЙ</p>
+                                </div>
+                            </label>    
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    
+</body>
+<script src="index.js">
+    let menu = document.getElementById('menu')
+let about_us = document.getElementById('about-us')
+// let about_us_item = document.getElementById('aboutUsItem')
+let changer = true
+
+const openHamburger = () => {
+    console.log(changer)
+    if (changer) {
+        about_us.className = 'about-us-mini'
+        // about_us__item.className = 'aboutUsItem-mini'
+    } else {
+        about_us.className = 'about-us'
+        // about_us_item.className = 'aboutUsItem'
+    }
+        
+    changer = !changer
+}
+menu.addEventListener('click',openHamburger)
+</script>
+</html>

@@ -4,7 +4,6 @@ let about_us = document.getElementById('about-us')
 let changer = true
 
 const openHamburger = () => {
-    console.log(changer)
     if (changer) {
         about_us.className = 'about-us-mini'
         // about_us__item.className = 'aboutUsItem-mini'
