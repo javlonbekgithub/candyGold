@@ -19,7 +19,13 @@
     position: relative;
 }
 @media screen and (max-width: 900px) {
-
+    .background {
+        background-position: center;
+    }
+    .main {
+        overflow-y: scroll;
+    }
+    
 }
 
 .main {
@@ -93,11 +99,21 @@
         backdrop-filter: blur(16px);
         background-color: var(--alphaGrey);
     }
+        .aboutUsItemA {
+            display: inline-block;
+            text-decoration: none;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+        }
         .aboutUsItem {
             display: inline-block;
             text-decoration: none;
             display: flex;
             align-items: center;
+            justify-content: center;
             color: white;
             height: 100%;
             /* font-size: 1em; */
@@ -128,31 +144,31 @@
             z-index: 100;
             right: 0;
             animation: about-us 0.5s;
-            /* display: flex; */
+            display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
             backdrop-filter: blur(20px);
             background-color: var(--alphaGrey);
         }
-        .aboutUsItem-mini {
-            /* display: inline-block; */
-            text-decoration: none;
+        .aboutUsItem {
+            
             margin: 0 0;
             padding: 0 0;
             /* display: flex; */
             align-items: center;
             color: white;
             height: 100%;
-            /* font-size: 1em; */
+            font-family: var(--font);
+            font-size: 1.5em;
             cursor: pointer;
             width: 100%;
             object-fit: none;
-            /* padding: 0 6px; */
+            padding: 10px;
             transition: ease-out;
             transition-duration: 0.4s;
         }
-        .aboutUsItem-mini:hover {
+        .aboutUsItem:hover {
             background-color: var(--brown);
         }
         @keyframes about-us {
@@ -372,20 +388,25 @@
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        /* justify-content: space-evenly; */
+        /* padding: 200px 0; */
     }
     .ftrInfo {
         order: 1;
+        padding: 20px 0;
     }
     .roundAbout {
         order: 3;
+        padding: 20px 0;
     }
     .setPanel {
+        padding: 20px 0;
         order: 2;
     }
         .langCont {
             position: absolute;
-            bottom: 130px;
+            bottom: 80px;
             backdrop-filter: blur(20px);
             background-color: var(--alphaGrey);
             display: none;

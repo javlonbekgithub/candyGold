@@ -1,15 +1,16 @@
 let menu = document.getElementById('menu')
 let about_us = document.getElementById('about-us')
-let about_us__item = document.getElementById('aboutUsItem')
+// let about_us_item = document.getElementById('aboutUsItem')
 let changer = true
 
 const openHamburger = () => {
+    console.log(changer)
     if (changer) {
         about_us.className = 'about-us-mini'
-        about_us__item.className = 'aboutUsItem-mini'
+        // about_us__item.className = 'aboutUsItem-mini'
     } else {
         about_us.className = 'about-us'
-        about_us__item.className = 'aboutUsItem'
+        // about_us_item.className = 'aboutUsItem'
     }
         
     changer = !changer
