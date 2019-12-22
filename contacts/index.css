@@ -209,16 +209,59 @@
         .columns {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: space-around;
             width: 15vw;
         }
-            .map {
-                object-fit: contain;
-                width: 105px;
+            .partition {
+                color: var(--violet);
+                font-weight: 600;
+                font-size: 1.2em;
+                padding: 10px 0;
             }
-            .notNecessary {
-                color: transparent;
+            .tel {
+                padding-top: 20px;
+                border-top: 3px solid orangered;
+                width: max-content;
+                font-weight: 650;
+                color: rgba(158, 168, 255, 0.829);
             }
+            .email {
+                font-weight: 650;
+                color: rgba(158, 168, 255, 0.829);
+            }
+            .columns-content {
+                padding-bottom: 10px;
+                font-weight: 650;
+                color: rgba(158, 168, 255, 0.829);
+            }
+            .columns-bottom {
+                position: relative;
+                padding-top: 20px;
+            }
+                .address {
+                    font-size: 0.9em;
+                    font-weight: 600;
+                    color:var(--violet);
+                }
+                .map {
+                    position: absolute;
+                    top: 0;
+                    object-fit: contain;
+                    width: 60px;
+                }
+                .arrow-left {
+                    position: absolute;
+                    object-fit: contain;
+                    width: 40px;
+                    right: 110%;
+                }
+                .notNecessary {
+                    position: relative;
+                    pointer-events: none;
+                    /* visibility: hidden; */
+                    color: transparent;
+                }
+
         @media screen and (max-width: 900px){
             .contacts {
                 display: flex;
@@ -230,6 +273,7 @@
                 padding: 2vh 0;
                 width: 100%;
             }
+               
         }
     .footer {
             color: var(--violet);
@@ -290,7 +334,7 @@
             }
             .langCont {
                 position: absolute;
-                /* bottom: 60px; */
+                bottom: 60px;
                 display: none;
                 transition: ease-in-out;
                 transition-duration: 1s;
@@ -340,10 +384,13 @@
                 padding: 20px 0;
                 order: 2;
             }
+            .langLabel{
+                position: relative;
+            }
                 .langCont {
                     position: absolute;
-                    bottom: 80px;
-                    background-color: var(--alphaGrey);
+                    bottom: 100%;
+                    background-color: rgba(255, 255, 255, 0.767);
                     display: none;
                     transition: ease-in-out;
                     transition-duration: 1s;
