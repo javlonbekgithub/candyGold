@@ -234,64 +234,7 @@
             font-weight: 250;
         }
 }
-.products {
-    height: 15vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    margin: 0 var(--lm);
-    width: 95%;
-    font-size: 1.4em;
-    font-weight: 600;
-    color: white;
-}
-    .prItems {  
-        width: 22vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 5px 0;
-        height: 100%;
-        backdrop-filter: blur(20px);
-        background-color: var(--alphaGrey);
-        font-family: var(--font);
-    }
-        .prItemsName {
-            margin-left: 10px;
-        }
-@media screen and (max-width: 900px) {
-    .products {
-        display: flex;
-        flex-direction: column;
-        margin: 0 0;
-        justify-content: space-between;
-        align-items: center;
-        text-align: center;
-        height: max-content;
-        width: 100%;
-        font-size: 1.4em;
-        font-weight: 600;
-        color: white;
-    }
-        .prItems {  
-            display: flex;
-            width: 80%;
-            align-items: center;
-            justify-content: center;
-            padding: 10px 50px;
-            margin: 5px 0;
-            /* flex-direction: inherit; */
-            backdrop-filter: blur(20px);
-            background-color: var(--alphaGrey);
-            font-family: var(--font);
-        }
-            .prItemsIcon {
-                object-fit: contain;
-                width: 6vw;
-                margin-right: 10px;
-            }
-}
+
 .selectorBackground {
     width: 30px;
     margin: 0 var(--lm);
