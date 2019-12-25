@@ -1,0 +1,21 @@
+@font-face {
+    font-family: CeraPro-Black;
+    src: url('../assets/fonts/cera font/Cera Pro Black.otf');
+}
+
+.nonloop {
+    position: absolute;
+    top: 20%;
+}
+    .item {
+        position: relative;
+    }
+        .first-card {
+            position: absolute;
+            top: 0;
+        }
+            .first-card-paragraph {
+                font-family: CeraPro-Black;
+                color: white;
+                font-size: 1.9em;
+            }
