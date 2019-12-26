@@ -22,9 +22,7 @@
 .background {
     width: 100vw;
     height: 100vh;
-    /* background-image: url('../assets/back.png'); */
     background-size: cover;
-    /* background-color: green; */
     background-size: cover;
     position: relative;
     
@@ -67,7 +65,7 @@
             height: 60%;
             object-fit: contain;
             z-index: -1;
-            bottom: -110px;
+            bottom: -410px;
         }
     
 }
