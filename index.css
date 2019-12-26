@@ -257,8 +257,8 @@
             width: 80%;
             align-items: center;
             justify-content: center;
-            padding: 10px 50px;
-            margin: 5px 0;
+            padding: 40px 50px;
+            margin: 10px 0;
             /* flex-direction: inherit; */
             backdrop-filter: blur(20px);
             background-color: var(--alphaGrey);
