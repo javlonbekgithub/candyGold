@@ -130,3 +130,13 @@
                 transform: translateX(30px);
             }
 }
+@media screen and (min-height: 1800px) {
+    .owl-item {
+        width: 640px!important;
+    }
+    .item {
+        position: relative;
+        height: 640px;
+        width: 400px;
+    }
+}
