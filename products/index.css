@@ -53,10 +53,22 @@
 @media screen and (max-width: 900px) {
     .background {
         background-position: center;
+        overflow-y: scroll;
     }
     .main {
-        /* overflow-y: scroll; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: max-content;
+        overflow-y: scroll;
     }
+        .carusell {
+            position: absolute;
+            height: 60%;
+            object-fit: contain;
+            z-index: -1;
+            bottom: -110px;
+        }
     
 }
 
@@ -102,7 +114,7 @@
 
 .background {
     width: 100vw;
-    height: auto;
+    height: max-content;
     overflow-y: scroll;
 }
     .logoName {
@@ -241,12 +253,13 @@
     }
 @media screen and (max-width: 900px) {
     .goal {
-        color: white;
+        color: black;
         width: max-content;
         margin: 3vh 0 2vh 0;
+        margin-bottom: 100px;
         position: relative;
         left: var(--lm);
-        font-family: var(--font)
+        font-family: CeraPro-Black;
         }
         .goalPr {
             font-size: 1em;
