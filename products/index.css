@@ -53,8 +53,7 @@ img {
 @media screen and (max-width: 900px) {
     .background {
         background-position: center;
-        overflow-y: scroll;
-        width: 100vw;
+        width: 100%;
         height: max-content;
     }
         .main {
