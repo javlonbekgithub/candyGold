@@ -1,0 +1,303 @@
+:root {
+    --alphaGrey: rgba(102,102,102,0.12);
+    --greyFirefox: rgba(112, 112, 112, 0.808);
+    --lm: 35px;
+}
+.footer {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 var(--lm);
+    margin-bottom: 20px;
+}
+    .ftrInfo {
+        font-size: 0.8em;
+        width: 375px;
+        margin: 0;
+    }
+    .downloadCatalog {
+        margin-bottom: 7px;
+    }
+    
+    .roundAbout {
+        display: flex;
+        align-items: center;
+        align-self: center;
+        cursor: pointer;
+        font-family: var(--font)
+    }
+    .roundAboutItemPr {
+        font-size: 1.9em;
+        margin: 0 10px;
+        align-self: center;
+    }
+    .setPanel {
+        display: flex;
+        align-self: center;
+        align-items: center;
+        color: white;
+    }
+    .setPanelItem {
+        display: flex;
+        align-items: center;
+        align-self: center;
+        font-family: var(--font);
+        font-weight: 450;
+        border: 2px solid transparent;
+        text-align: center;
+        cursor: pointer;
+        padding: 0 10px;
+        border-bottom-color: white;
+    }
+    .setPanelItemLanguage {
+        display: flex;
+        align-items: center;
+        object-fit: contain;
+        font-family: var(--font);
+        font-weight: 450;
+        border: 2px solid transparent;
+        width: 10vw;
+        text-align: center;
+        cursor: pointer;
+        /* transition: ease-in;
+        transition-duration: 0.5s; */
+        /* border-bottom-color:white; */
+    }
+    .arrowDown {
+        object-fit: contain;
+        width: 12px;
+        margin-right: 10px;
+        transition: ease-in-out;
+        position: relative;
+        /* margin-bottom: 20px; */
+        transition-duration: 0.1s; 
+    }
+    .langLabel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+        margin: 0;
+    
+    }
+    .langCont {
+        position: absolute;
+        bottom: 100%;
+        backdrop-filter: blur(20px);
+        background-color: var(--alphaGrey);
+        display: none;
+        transition: ease-in-out;
+        z-index: 22;
+        transition-duration: 1s;
+    }
+    .langContPr {
+        cursor: pointer;
+        padding: 10px;
+        margin: 0;
+    }
+    .langContPr:hover {
+        background-color:var(--brown);
+    }
+    .inputCH {
+        display: none;
+    }
+    .inputCH:checked ~ .langCont {
+        display: block;
+        animation: anime 0.5s;
+    }
+    @keyframes anime {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .inputCH:checked ~ .arrowDown {
+        transform: rotateZ(180deg);
+    }
+@media screen and (max-width: 900px) {
+    .footer {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        /* justify-content: space-evenly; */
+        /* padding: 200px 0; */
+    }
+    .ftrInfo {
+        order: 1;
+        padding: 20px 0;
+    }
+    .roundAbout {
+        order: 3;
+        padding: 20px 0;
+    }
+    .setPanel {
+        padding: 20px 0;
+        order: 2;
+    }
+        .langCont {
+            position: absolute;
+            bottom: 100%;
+            backdrop-filter: blur(20px);
+            background-color: var(--greyFirefox);
+            display: none;
+            transition: ease-in-out;
+            transition-duration: 1s;
+        }
+
+}
+/* .footer {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 var(--lm);
+    margin-bottom: 20px;
+}
+    .ftrInfo {
+        margin: 0;
+        width: 375px;
+        font-size: 0.8em;
+    }
+    .downloadCatalog {
+        margin-bottom: 7px;
+    }
+    .roundAbout {
+        display: flex;
+        align-items: center;
+        align-self: center;
+        cursor: pointer;
+        font-family: var(--font)
+    }
+    .roundAboutItemPr {
+        font-size: 1.9em;
+        margin: 0 10px;
+        align-self: center;
+    }
+    .setPanel {
+        display: flex;
+        align-self: center;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+    }
+    .setPanelItem {
+        display: flex;
+        align-items: center;
+        align-self: center;
+        font-family: var(--font);
+        font-weight: 450;
+        border: 2px solid transparent;
+        text-align: center;
+        cursor: pointer;
+        padding: 0 10px;
+        border-bottom-color: white;
+    }
+    .setPanelItemLanguage {
+        display: flex;
+        align-items: center;
+        object-fit: contain;
+        font-family: var(--font);
+        font-weight: 450;
+        border: 2px solid transparent;
+        width: 10vw;
+        text-align: center;
+        cursor: pointer;
+        transition: ease-in;
+        transition-duration: 0.5s; 
+        border-bottom-color:white;
+    }
+    .arrowDown {
+        object-fit: contain;
+        width: 1vw;
+        margin-right: 10px;
+        transition: ease-in-out;
+        transition-duration: 0.1s; 
+    }
+    .langLabel {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+    }
+        .selected {
+            position: relative;
+            bottom: -3px;
+        }
+        .langCont {
+            position: absolute;
+            bottom: 100%;
+            z-index: 10000;
+            backdrop-filter: blur(20px);
+            background-color: var(--alphaGrey);
+            display: none;
+            transition: ease-in-out;
+            transition-duration: 1s;
+        }
+        .langContPr {
+            margin: 0;
+            cursor: pointer;
+            padding: 10px;
+        }
+        .langContPr:hover {
+            background-color:var(--brown);
+        }
+        .inputCH {
+            display: none;
+        }
+        .inputCH:checked ~ .langCont {
+            display: block;
+            animation: anime 0.5s;
+        }
+    @keyframes anime {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .inputCH:checked ~ .arrowDown {
+        transform: rotateZ(180deg);
+    }
+@media screen and (max-width: 900px) {
+    .footer {
+      
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    .ftrInfo {
+        order: 1;
+        padding: 20px 0;
+        width: 100%;
+    }
+    .roundAbout {
+        order: 3;
+        padding: 20px 0;
+    }
+    .setPanel {
+        padding: 20px 0;
+        order: 2;
+    }
+        .langCont {
+            position: absolute;
+            bottom: 100%;
+            backdrop-filter: blur(20px);
+            background-color: var(--alphaGrey);
+            display: none;
+            transition: ease-in-out;
+            transition-duration: 1s;
+        }
+
+}    */   

@@ -8,6 +8,10 @@
     font-family: CeraPro;
     src: url('../assets/fonts/cera font/Cera Pro Regular.otf');
 }
+@font-face {
+    font-family: CeraPro-Bold;
+    src: url('../assets/fonts/cera font/Cera Pro Bold.otf');
+}
 :root {
     --alphaGrey: rgba(126, 126, 126, 0.12);
     --lm: 35px;
@@ -26,10 +30,19 @@
 @media screen and (max-width: 900px) {
     .background {
         background-position: center;
+        overflow-y: scroll;
+        width: 100%;
+        height: max-content;
     }
     .main {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: space-between;
+        height: max-content;
         overflow-y: scroll;
     }
+    
     
 }
 
@@ -53,15 +66,17 @@
       
             .partition {
                 color: black;
-                font-weight: 600;
                 font-size: 1.2em;
                 padding: 10px 0;
+                font-family: CeraPro-Bold;
             }
             .tel {
                 padding-top: 20px;
+                padding-right: 10px;
                 border-top: 3px solid orangered;
                 width: max-content;
                 font-weight: 650;
+                font-family: CeraPro-Bold;
                 color:var(--grey);
             }
             .email {
@@ -80,6 +95,7 @@
                 .address {
                     font-size: 0.9em;
                     font-weight: 600;
+                    font-family: CeraPro-Bold;
                     color: black;
                 }
                 .map {
@@ -94,14 +110,27 @@
                     width: 40px;
                     right: 110%;
                 }
-                .notNecessary {
-                    position: relative;
-                    pointer-events: none;
-                    /* visibility: hidden; */
-                    color: transparent;
-                }
+               
+        @media screen and (min-width: 1800px) {
+            .contacts {
+                display: flex;
+                justify-content: space-between;
+                padding: 0 25vw;
+                width: 100%;
+                margin-top: 0;
+            }
+                .partition {
+                    font-size: 23px;
+                    font-family: CeraPro-Bold;
 
-        @media screen and (max-width: 900px){
+                }
+                    .address {
+                        font-family: CeraPro-Bold;
+                        font-size: 23px;
+                    }
+        }
+
+        @media screen and (max-width: 900px) {
             .contacts {
                 display: flex;
                 flex-direction: column;
