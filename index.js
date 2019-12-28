@@ -1,7 +1,13 @@
 let menu = document.getElementById('menu')
 let about_us = document.getElementById('about-us')
-// let about_us_item = document.getElementById('aboutUsItem')
+let prItems = document.getElementsByClassName('prItems')
+let prItemsOriginal = prItems[0].style
 let changer = true
+let x,y
+degY = 0
+degX = 0
+maxDegY = 30
+maxDegX = 10 
 
 const openHamburger = () => {
     if (changer) {
@@ -15,3 +21,42 @@ const openHamburger = () => {
     changer = !changer
 }
 menu.addEventListener('click',openHamburger)
+
+
+const over = (e,i) => {
+
+    if (e.layerX < 112) {
+        if(degY < -maxDegY) 
+            degY = -maxDegY
+        y = degY = degY - 3.73
+
+    } else {
+            if(degY > maxDegY)
+                degY = maxDegY
+        y = degY = degY + 3.73
+    }
+
+    if (e.layerY > 47.5) {
+        if(degX < -maxDegX) 
+            degX = -maxDegX
+        x = degX = degX - 4.75
+
+    } else {
+            if(degX > maxDegX)
+                degX = maxDegX
+        x = degX = degX + 4.75
+    }
+
+    
+    prItems[i].style.transform = `rotateX(${x}deg) rotateY(${y}deg) translateY(-10px)`
+}
+
+const leave = (e,i) => {
+    prItems[i].style = prItemsOriginal
+    degY = 0
+    degX = 0 
+}
+for(let i = 0;i < prItems.length; i++){
+    prItems[i].addEventListener('mousemove',(e)=>over(e,i))
+    prItems[i].addEventListener('mouseleave',(e)=>leave(e,i))
+}
