@@ -89,30 +89,79 @@
                 text-align: left;
                 color: #000000;
             }
-        .textAndImage {
-            width: 450px;
+        
+            .employeesCont {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+                .employees {
+                    display: flex;
+                    padding-bottom: 20px;
+                    margin-bottom: 30px;
+                    border-radius: 7px;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    box-shadow: -2px 15px 42px -20px rgba(0,0,0,0.75);
+                    /* box-shadow: -2px -2px 20px 0px rgba(87, 87, 87, 0.678); */
+                }
+                    .employeesImage {
+                        margin-bottom: 5px  ;
+                        object-fit: contain;
+                        width: 100%;
+                    }
+                    .Ename {
+                        padding: 5px 15px;
+                        font-weight: 620;
+                        font-family: CeraPro-Black;
+                        font-size: 16px;
+                        font-weight: 900;
+                        font-stretch: normal;
+                        font-style: normal;
+                        line-height: 1.15;
+                        letter-spacing: normal;
+                        text-align: left;
+                        color: #000000;
+                        
+                    }
+                    .line {
+                        margin: 5px 15px;
+                        background-color: orangered;
+                        height: 3px;
+                        width: 40%;
+                    }
+                    .post {
+                        font-weight: 600;
+                        padding: 5px 15px;
+                        color: rgba(0, 0, 0, 0.6);
+                    }
+                    
+        @media screen and (max-width: 900px){
+        .company {
             display: flex;
             flex-direction: column;
+            align-items: center;
+            width: 100%;
             justify-content: space-between;
-
         }
-            .text {
+            .wow {
                 width: 100%;
-                font-family: Gilroy;
-                font-size: 22px;
-                font-weight: 500;
-                font-stretch: normal;
-                font-style: normal;
-                line-height: 1.67;
-                letter-spacing: normal;
-                text-align: left;
-                color: #44454a;
+                padding: 10%;
             }
-            .advertisementImage {
-                object-fit: contain;
-                width: 450px;
-                margin-bottom: 20px;
+            .companyImageAndText {
+                width: 100%;
+                padding: 10%;
+    
             }
+            .employeesCont {
+                width: 100%;
+                padding: 10%;
+            }
+            
+            
+                
+        }
+          
         .advertisementInfo {
             opacity: 0.6;
             font-family: CeraPro-Black;
@@ -129,18 +178,7 @@
                 display: flex;
                 justify-content: space-between;
                 font-weight: 600;
-                position: relative;
             }
-                .advertisementInfo h1 {
-                    position: relative;
-                }
-                    .advertisementInfo h1 a {
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        top: 0;
-                        left: 0;
-                    }
 @media screen and (max-width: 900px){
     .advertisement {
         display: flex;

@@ -79,10 +79,10 @@
                 object-fit: cover;
                 position: relative;
                 height: 320px;
-                width: 170px;
+                width: 210px;
             }
             .left-image-items {
-                padding: 50px 0 0 20px;
+                margin: 50px 0 0 20px;
                 position: absolute;
                 top: 0;
                 font-family: CeraPro-Bold;
@@ -90,14 +90,14 @@
                 /* font-size: 1em; */
             }
                 .lIitem {
-                    font-family: CeraPro-Bold;
+                    font-family: Gilroy-Black;
                     color: white;
                     font-size: 1.6em;
                     position: relative;
                 }
                 .lIitem:nth-child(1)::before{
                     width: 100%;
-                    height: 3px;
+                    height: 4px;
                     content: '';
                     position: absolute;
                     top: 50%;
@@ -108,7 +108,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            width: 300px;
+            margin-left: 100px;            
         }
             .center-title {
                 font-family: Gilroy-Black;
@@ -125,6 +125,7 @@
             .secondary-title {
                 opacity: 0.6;
                 margin: 10px 0;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.226);
                 font-family: Gilroy-Medium;
                 font-size: 18px;
                 font-weight: 500;
@@ -175,9 +176,164 @@
                 color: #ffffff;
               }
         .right-image-cont {
-            padding-right: 100px;
+            padding-right: 215px;
         }
             .right-image {
                 object-fit: cover;
                 width: 450px;
-            }       
+            }
+@media screen and (min-width: 1800px) {
+    .left-image-cont {
+        position: relative;
+        padding-left: 75px;
+    }
+        .left-image {
+            object-fit: cover;
+            position: relative;
+            height: 640px;
+            width: 400px;
+        }
+        .left-image-items {
+            margin: 90px 40px;
+            position: absolute;
+            top: 0;
+            
+        }
+            .lIitem {
+                font-family: Gilroy-Black;
+                font-size: 50px;
+                margin: 10px 0;
+                padding: 15px 0;
+                font-weight: 900;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 0.94;
+                letter-spacing: normal;
+                text-align: left;
+                color: #ffffff;
+            }
+            .lIitem:nth-child(1)::before{
+                width: 100%;
+                height: 6px;
+                content: '';
+                position: absolute;
+                top: 50%;
+                z-index: 0;
+                background-color:rgba(255, 0, 0, 0.466);
+            }
+        .center-cont {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-left: 100px;            
+        }
+            .center-title {
+                font-family: Gilroy-Black;
+                margin-bottom: 30px;
+                font-size: 40px;
+                font-weight: 900;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1;
+                letter-spacing: normal;
+                text-align: left;
+                color: #000000;
+            }
+            .secondary-title {
+                opacity: 0.6;
+                margin: 20px 0;
+                font-family: Gilroy-Medium;
+                font-size: 18px;
+                font-weight: 500;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.33;
+                letter-spacing: normal;
+                text-align: left;
+                color: #000000;
+                
+            }
+            .center-text {
+                font-size: 18px;
+            }
+            .measures {
+                font-size: 18px; 
+            }    
+            .cButton {
+                margin-top: 55px;
+                font-size: 18px;
+                padding: 20px 60px;
+
+              }
+        
+            .right-image {
+                object-fit: cover;
+                width: 697px;
+            }
+}
+@media screen and (max-width: 900px) {
+    .product-info {
+        margin: 30px 0;
+        flex-direction: column;
+    }
+        .left-image-cont {
+            padding: 0;
+            margin: 20px 0;
+        }
+            .left-image {
+                object-fit: cover;
+                position: relative;
+                height: 320px;
+                width: 220px;
+            }
+            .left-image-items {
+                /* margin: 50px 0 0 0px; */
+                position: absolute;
+                top: 0;
+                font-family: CeraPro-Bold;
+                color: white;
+                /* font-size: 1em; */
+            }
+                .lIitem {
+                    font-family: Gilroy-Black;
+                    color: white;
+                    font-size: 1.6em;
+                    position: relative;
+                }
+                .lIitem:nth-child(1)::before{
+                    height: 3px;
+                }
+        .center-cont {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-left: 0px;
+            padding: 0 20px;            
+        }
+            .center-title {
+                margin-bottom: 10px;
+                font-size: 22px;
+            }
+            .secondary-title {
+                margin: 10px 0;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.226);
+            }
+            .center-text {
+                font-size: 0.8em;
+            }
+            .measures { 
+                margin-bottom: 10px;
+            }    
+            .cButton {
+                padding: 10px 15px;
+                
+              }
+        .right-image-cont {
+            padding-right: 0px;
+            width: 100%;
+        }
+            .right-image {
+                width: 100%;
+            }
+
+}
