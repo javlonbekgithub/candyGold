@@ -71,10 +71,10 @@
     font-family: var(--font);
     transition: ease-in;
     transition-duration: 0.25s;
+    transition-delay: 0.5s;
     cursor: pointer;
     }
     .goal:hover {
-     
         color: red;
     }
     .goalH1 {
@@ -146,6 +146,13 @@
         background-color: var(--alphaGrey);
         font-family: var(--font);
         cursor: pointer;
+    }
+    .prItems a {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
     }
     .prItems:hover {
         /* top: -10px; */

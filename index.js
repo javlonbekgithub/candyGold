@@ -1,6 +1,7 @@
 let menu = document.getElementById('menu')
 let about_us = document.getElementById('about-us')
 let prItems = document.getElementsByClassName('prItems')
+let goal = document.getElementsByClassName('goal')
 let prItemsOriginal = prItems[0].style
 let changer = true
 let x,y
@@ -60,3 +61,9 @@ for(let i = 0;i < prItems.length; i++){
     prItems[i].addEventListener('mousemove',(e)=>over(e,i))
     prItems[i].addEventListener('mouseleave',(e)=>leave(e,i))
 }
+
+goal[0].addEventListener('mouseover',()=>goal[0].style.color = 'red')
+
+setTimeout(() => {
+    
+}, 1000);

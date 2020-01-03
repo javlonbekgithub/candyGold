@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: CeraPro;
+}
+@font-face {
+    font-family: Gilroy-Medium;
+    src: url('../assets/fonts/cera font/Cera Pro Medium.otf');
+}
+@font-face {
+    font-family: Gilroy-Black;
+    src: url('../assets/fonts/cera font/Cera Pro Black.otf');
+}
+@font-face {
+    font-family: CeraPro;
+    src: url('../assets/fonts/cera font/Cera Pro Regular.otf');
+}
+@font-face {
+    font-family: CeraPro-Bold;
+    src: url('../assets/fonts/cera font/Cera Pro Bold.otf');
+}
+:root {
+    --alphaGrey: rgba(126, 126, 126, 0.12);
+    --lm: 35px;
+    --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --violet:#484c7f;
+    --grey:rgba(0,0,0,0.6);
+    
+}
+.background {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+@media screen and (max-width: 900px) {
+    .background {
+        background-position: center;
+        overflow-y: scroll;
+        width: 100%;
+        height: max-content;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: space-between;
+        height: max-content;
+        overflow-y: scroll;
+    }
+    
+    
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    padding-top: 3vh;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+    .product-info {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+        .left-image-cont {
+            position: relative;
+            padding-left: 35px;
+        }
+            .left-image {
+                object-fit: cover;
+                position: relative;
+                height: 320px;
+                width: 170px;
+            }
+            .left-image-items {
+                padding: 50px 0 0 20px;
+                position: absolute;
+                top: 0;
+                font-family: CeraPro-Bold;
+                color: white;
+                /* font-size: 1em; */
+            }
+                .lIitem {
+                    font-family: CeraPro-Bold;
+                    color: white;
+                    font-size: 1.6em;
+                    position: relative;
+                }
+                .lIitem:nth-child(1)::before{
+                    width: 100%;
+                    height: 3px;
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    z-index: 0;
+                    background-color:rgba(255, 0, 0, 0.466);
+                }
+        .center-cont {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 300px;
+        }
+            .center-title {
+                font-family: Gilroy-Black;
+                margin-bottom: 10px;
+                font-size: 22px;
+                font-weight: 900;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1;
+                letter-spacing: normal;
+                text-align: left;
+                color: #000000;
+            }
+            .secondary-title {
+                opacity: 0.6;
+                margin: 10px 0;
+                font-family: Gilroy-Medium;
+                font-size: 18px;
+                font-weight: 500;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.33;
+                letter-spacing: normal;
+                text-align: left;
+                color: #000000;
+                
+            }
+            .center-text {
+                font-family: Gilroy-Medium;
+                font-weight: 500;
+                font-stretch: normal;
+                font-style: normal;
+                font-size: 0.8em;
+                line-height: 1.33;
+                letter-spacing: normal;
+                text-align: left;
+                color: #44454a;
+            }
+            .measures { 
+                opacity: 0.6;
+                font-family: Gilroy-Medium;
+                font-weight: 500;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.33;
+                letter-spacing: normal;
+                text-align: left;
+                color: #000000;
+                margin-bottom: 10px;
+            }    
+            .cButton {
+                opacity: 0.65;
+                height: max-content;
+                width: max-content;
+                padding: 10px 15px;
+                background-color: #f93634; 
+                font-family: Gilroy-Black;
+                font-weight: 900;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.33;
+                letter-spacing: normal;
+                text-align: left;
+                color: #ffffff;
+              }
+        .right-image-cont {
+            padding-right: 100px;
+        }
+            .right-image {
+                object-fit: cover;
+                width: 450px;
+            }       
