@@ -7,7 +7,7 @@ let changer = true
 let x,y
 degY = 0
 degX = 0
-maxDegY = 30
+maxDegY = 15
 maxDegX = 10 
 
 const openHamburger = () => {
@@ -29,23 +29,23 @@ const over = (e,i) => {
     if (e.layerX < 112) {
         if(degY < -maxDegY) 
             degY = -maxDegY
-        y = degY = degY - 3.73
+        y = degY = degY - 2.46
 
     } else {
             if(degY > maxDegY)
                 degY = maxDegY
-        y = degY = degY + 3.73
+        y = degY = degY + 2.46
     }
 
     if (e.layerY > 47.5) {
         if(degX < -maxDegX) 
             degX = -maxDegX
-        x = degX = degX - 4.75
+        x = degX = degX - 1.75
 
     } else {
             if(degX > maxDegX)
                 degX = maxDegX
-        x = degX = degX + 4.75
+        x = degX = degX + 1.75
     }
 
     

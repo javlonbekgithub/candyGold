@@ -138,6 +138,7 @@
         align-items: center;
         justify-content: center;
         margin: 5px 0;
+        z-index: 100;
         position: relative;
         transition: ease;
         transition-duration: 0.3s;
