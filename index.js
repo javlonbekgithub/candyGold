@@ -7,7 +7,7 @@ let changer = true
 let x,y
 degY = 0
 degX = 0
-maxDegY = 15
+maxDegY = 10
 maxDegX = 10 
 
 const openHamburger = () => {
@@ -29,12 +29,12 @@ const over = (e,i) => {
     if (e.layerX < 112) {
         if(degY < -maxDegY) 
             degY = -maxDegY
-        y = degY = degY - 2.46
+        y = degY = degY - 1.46
 
     } else {
             if(degY > maxDegY)
                 degY = maxDegY
-        y = degY = degY + 2.46
+        y = degY = degY + 1.46
     }
 
     if (e.layerY > 47.5) {
@@ -62,7 +62,6 @@ for(let i = 0;i < prItems.length; i++){
     prItems[i].addEventListener('mouseleave',(e)=>leave(e,i))
 }
 
-goal[0].addEventListener('mouseover',()=>goal[0].style.color = 'red')
 
 setTimeout(() => {
     
