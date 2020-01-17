@@ -90,9 +90,10 @@
                 color: #000000;
             }
         
-        .owl-carousel {
-            width: 700px !important;
+        .owl-cont {
+            width: 690px;
             margin-left: 40px;
+
         }
             .item {
                 cursor: pointer;
@@ -140,7 +141,7 @@
 
                 }   
         @media screen and (max-width: 900px){
-        .company {
+        .advertisement {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -151,21 +152,10 @@
                 width: 100%;
                 padding: 10%;
             }
-            .companyImageAndText {
-                width: 100%;
-                padding: 10%;
-    
+            .owl-cont {
+                width: 80%;
             }
-           
-            
-            
-                
         }
-        .owl-carousel {
-            width: 100%
-          
-        }
-          
         .advertisementInfo {
             opacity: 0.6;
             font-family: CeraPro-Black;
@@ -177,37 +167,6 @@
             letter-spacing: -0.6px;
             text-align: left;
             padding: 0 50px 0 60px;
-        }
-            .advertisementPagination {
-                display: flex;
-                justify-content: space-between;
-                font-weight: 600;
-            }
-                .news-nav{
-                    cursor: pointer;
-                }
-                
-@media screen and (max-width: 900px){
-    .advertisement {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        justify-content: space-between;
-    }
-        .wow {
-            display: none;
-        }
-        .textAndImage {
-            width: 100%;
-            padding: 0 25px;
-        }
-        .advertisementImage {
-            width: 100%;
-            padding: 10px 0;
-        }
-        .advertisementInfo {
-            display: flex;
             align-items: center;
             flex-direction: column;
             justify-content: space-between;
@@ -215,7 +174,21 @@
             .advertisementPagination {
                 display: flex;
                 justify-content: space-between;
+                font-weight: 600;
+                display: flex;
+                justify-content: space-between;
                 margin: 10px 0;
             }
+                .news-nav{
+                    cursor: pointer;
+                    margin: 0 20px;
+                }
+                
+@media screen and (max-width: 900px){
+   
+        
+       
+        
+            
 }
      
