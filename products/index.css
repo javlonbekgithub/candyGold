@@ -29,27 +29,7 @@ img {
     position: relative;
     
 }
-    .carusell {
-        position: absolute;
-        height: 60%;
-        object-fit: contain;
-        z-index: -1;
-        bottom: 0;
-    }
-    .carusell .carousel {
-        height: 100%;
-    }
-    .carusell .carousel .carousel-inner {
-        height: 100%;
-
-    }
-        .carusellImgCont {
-            height: 100%;
-        }
-            .carusellImg {
-                object-fit: cover;
-                height: 100%;
-            }
+    
 @media screen and (max-width: 900px) {
     .background {
         background-position: center;
@@ -64,14 +44,6 @@ img {
             height: max-content;
             overflow-y: scroll;
         }
-            .carusell {
-                position: absolute;
-                height: 60%;
-                object-fit: contain;
-                z-index: -1;
-                bottom: 0;
-            }
-    
 }
 
 .main {
