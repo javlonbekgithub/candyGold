@@ -137,6 +137,7 @@
     .setPanel {
         padding: 20px 0;
         order: 2;
+        margin-right: 18%;
     }
         .langCont {
             position: absolute;

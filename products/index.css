@@ -43,6 +43,7 @@ img {
             justify-content: space-between;
             height: max-content;
             overflow-y: scroll;
+            overflow-x: hidden;
         }
 }
 
@@ -64,6 +65,7 @@ img {
     line-height: 1em;
     position: relative;
     width: max-content;
+    margin-bottom: 220px;
     margin-left: var(--lm);
     font-family: CeraPro-Black;
     }
@@ -74,6 +76,7 @@ img {
     .goalPr {
         font-family: CeraPro-Light;
         font-size: 26px;
+        margin-top: 15px;
         font-weight: 250;
     }
 @media screen and (min-width: 1800px) {
@@ -82,6 +85,7 @@ img {
         line-height: 2em;
         position: relative;
         width: max-content;
+        margin-bottom: 430px;
         margin-left: var(--lm);
         font-family: CeraPro-Black;
         }
@@ -100,7 +104,7 @@ img {
         color: black;
         width: max-content;
         margin: 3vh 0 2vh 0;
-        margin-bottom: 100px;
+        margin-bottom: 300px;
         position: relative;
         left: var(--lm);
         font-family: CeraPro-Black;
@@ -112,16 +116,49 @@ img {
 }
 
 
-.selectorBackground {
-    width: 30px;
-    margin: 0 var(--lm);
-    margin-top: 200px;
-}
-.selector {
-    width: 13px;
-    height: 13px;
-    cursor: pointer;
-    margin: 8px 0;
-    background-color: rgb(134, 134, 134);
-    border-radius: 50%;
+
+
+    .fadeOut {
+        width: 100%;
+        height: 60%;
+        overflow: hidden;
+        z-index:-20;
+        background-color: rgb(255, 71, 71);
+        bottom: 0;
+        left: 0;
+        position: absolute;
+    }
+        .owl-dots {
+            position: absolute;
+            top: 50%;
+            z-index: 33;
+            left: 0;
+            transform: rotateZ(90deg);
+        }
+        /* .owl-nav {
+            position: absolute;
+            top: 0;
+            background-color: tomato;
+            left: 0;
+            width: 200px;
+        } */
+@media screen and (max-width: 900px) {
+    .fadeOut {
+        height: 60%;
+        overflow: hidden;
+        z-index:-20;
+        background-color: rgb(255, 71, 71);
+        bottom: 0;
+        right: 50%;
+        position: absolute;
+    }
+        .owl-dots {
+            top: 30%;
+        }
+        .images {
+            width: 900px;
+            height: 600px;
+            object-fit: cover;
+            object-position: center;
+        }
 }
